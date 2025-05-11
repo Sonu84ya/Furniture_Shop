@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     
+    <style>
+      
+         .nav_container{
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f1f3;
+         }
+         .navbar{
+            width: 90vw;
+            border-radius: 60px;
+            padding: 3px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            position: fixed;
+            top: 0px;
+            z-index: 1;
+         }
+         #dropdown{
+            height: 100%;
+            position : absolute;
+            top: 75px;
+            display: flex;
+            flex-direction: column;
+            display:none;
+         }
+         #dropdown li{
+            background-color: white;
+         }
+         #home{
+            height: 4rem;
+         }
+         #home:hover ul{
+            display: block;  
+         }
+
+         
+       
+         
+        
+        
+         
+    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+   <!-- Nav section -->
+    <div class="nav_container">
+        <div class="navbar">
+            <h1>Cartzilla</h1>  
+            <ul>
+               <li id="home">
+                     <a href="#">
+                  Home <i class='bx bxs-chevron-down'></i>
+               
+                  <ul id="dropdown">
+                     <li><a href="#">Electronic Store</a></li>
+                     <li><a href="#">Fashion Store v.1</a></li>
+                     <li><a href="#">Fashion Store v.2</a></li>
+                     <li><a href="#">Furniture Store</a></li>
+                     <li><a href="#">Furniture Store v.2</a></li>
+                     <li><a href="#">Grocery Store</a></li>
+                     <li><a href="#">Marketplace</a></li>
+                     <li><a href="#">Single Product Store</a></li>
+                  </ul>
+               </a>
+               </li>
+              <li><a href="#">Shop <i class='bx bxs-chevron-down'></i></a></li>
+              <li><a href="#">Account <i class='bx bxs-chevron-down'></i></a></li>
+              <li><a href="#">PagesHome <i class='bx bxs-chevron-down'></i></a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Components</a></li>
+            </ul>
+            <ul>
+              <li><button id="toggleBtn" class="toggle"><i class='bx bx-sun bx-spin' ></i></button></li>
+              <li><button><i class='bx bx-cart' ></i></button></li>
+              <li><button class="search"><i class='bx bx-search bx-tada' style='color:#dd1717' ></i></button></li>
+            </ul>  
+        </div>
+    </div>
+
+<div class="content_wraper">
+
+   <!-- Main Product Section  -->
+   <div class="section_1">
+        <a href="#section_2"><button class="down"><i class='bx arrow bx-down-arrow-alt'></i></button></a>
+       <div class="row1 head_text">
+           <h1>Everything You Need For<br> a Modern Interior</h1>
+       </div>        
+       <div class="row2">
+        <div class=" i1 image_div"></div>
+        <div class=" i2  image_div mid_img"></div>
+        <div class=" i3  image_div"></div>
+       </div>
+       <div class="row1 row3">
+            <h3>Armchair with wooden legs 70 * 140 cm</h3>
+            <h2>$269.99</h2>
+            <a href="https://cartilz.netlify.app"><button class="buy_btn">Shop now<i class='bx bx-chevron-down bx-rotate-270' ></i></button></a>
+       </div> 
+   </div>
+   
+   <!-- Sample Section -->
+   <div class="section_1 section_2" id="section_2">
+   <ul>
+     <li><img src="./Images/105.png" alt=""><h2>Bedroom</h2></li>
+     <li><img src="./Images/106.png" alt=""><h2>Chair</h2></li>
+     <li><img src="./Images/107.png" alt=""><h2>Shofa</h2></li>
+     <li><img src="./Images/108.png" alt=""><h2>Stylish Shofa</h2></li>
+     <li><img src="./Images/109.png" alt=""><h2>Gest Shofa</h2></li>
+     <li><img src="./Images/110.png" alt=""><h2>Passage Chair</h2></li>
+   </ul>
+   </div>
+   
+   <!-- Card section -->
+   <div class="section_1 section_3">
+     
+     <!-- Head section -->
+     <div class="head">
+       <h1>Popular product</h1>
+       <a href="#"><h3>view all ></h3></a>
+     </div>
+   
+     <!-- Card section -->
+     <div class="card_section">
+       <a href="#"><button></button></a>
+   
+        <div class="productCard">
+   
+           <img src="./Images/110.png">
+           <div class="colorSelector">
+              <div><sapn style="background: hsl(0, 0%, 0%);" class="span"></span></div>
+              <div><sapn style="background: gray;" class="span"></span></div>
+              <div><sapn style="background: green;" class="span"></span></div>
+           </div>
+           <div class="text">
+              <span class="i_span">Bed frame light gray 140*200 cm</span>
+               <h2>$760.00</h2>
+           </div>
+           <a href="#"><button>Add to Cart</button></a>
+        </div>
+        <div class="productCard">
+   
+           <img src="./Images/107.png">
+           <div class="colorSelector">
+              <div><sapn style="background: hsl(0, 0%, 0%);" class="span"></span></div>
+              <div><sapn style="background: gray;" class="span"></span></div>
+              <div><sapn style="background: green;" class="span"></span></div>
+           </div>
+           <div class="text">
+              <span class="i_span">Bed frame light gray 140*200 cm</span>
+               <h2>$760.00</h2>
+           </div>
+           <a href="#"><button>Add to Cart</button></a>
+        </div>
+        <div class="productCard">
+   
+           <img src="./Images/106.png">
+           <div class="colorSelector">
+              <div><sapn style="background: hsl(0, 0%, 0%);" class="span"></span></div>
+              <div><sapn style="background: gray;" class="span"></span></div>
+              <div><sapn style="background: green;" class="span"></span></div>
+           </div>
+           <div class="text">
+              <span class="i_span">Bed frame light gray 140*200 cm</span>
+               <h2>$760.00</h2>
+           </div>
+           <a href="#"><button>Add to Cart</button></a>
+        </div>
+        <div class="productCard">
+   
+           <img src="./Images/105.png">
+           <div class="colorSelector">
+              <div><sapn style="background: hsl(0, 0%, 0%);" class="span"></span></div>
+              <div><sapn style="background: gray;" class="span"></span></div>
+              <div><sapn style="background: green;" class="span"></span></div>
+           </div>
+           <div class="text">
+              <span class="i_span">Bed frame light gray 140*200 cm</span>
+               <h2>$760.00</h2>
+           </div>
+           <a href="#"><button>Add to Cart</button></a>
+        </div>
+   
+        <div class="productCard">
+   
+           <img src="./Images/101.png">
+           <div class="colorSelector">
+              <div><sapn style="background: hsl(0, 0%, 0%);" class="span"></span></div>
+              <div><sapn style="background: gray;" class="span"></span></div>
+              <div><sapn style="background: green;" class="span"></span></div>
+           </div>
+           <div class="text">
+              <span class="i_span">Bed frame light gray 140*200 cm</span>
+               <h2>$760.00</h2>
+           </div>
+           <a href="#"><button>Add to Cart</button></a>
+        </div>
+        
+        
+   
+     </div>
+   </div> 
+   
+   <!-- Interior Design and Inspiration  -->
+   <div class="section_1 s-4">
+        <h1 class="s-42">Interior design and inspiration</h1> 
+         <div class="head s-42">
+               <ul>
+                 <li><a href="#"><button>Living room</button></a></li>
+                 <li><a href="#"><button>Bedroom</button></a></li>
+                 <li><a href="#"><button>Kitchen</button></a></li>
+                 <li><a href="#"><button>Decoration</button></a></li>
+                 <li><a href="#"><button>Office</button></a></li>
+               </ul>
+         </div>
+         <div class="img">
+              <div class="c1">
+                 <img src="./Images/r1.jpg" >
+                 <img src="./Images/101.png" >
+              </div>
+              <div class="c2">
+                 <img id="i3"  src="./Images/r4.jpg" >
+                 <img id="i4"  src="./Images/103.png">
+              </div> 
+         </div>
+   </div>
+
+    <!-- Paragraph cards -->
+    <div class="section_1 s-5">
+      <div class="containers">
+               <img src="./Paragraph_images/eco.png" >
+               <h2>Echo-Friendly</h2>
+               <p>
+                  Decorate your space with echo friendly furniture
+                  with low VOCs, environmentally friendly materials
+                  and safe coatings. 
+               </p>
+            </div>
+            <div class="containers">
+               <i  class='bx unbeat bx-bookmark-minus'></i>
+               <h2>Unbeatable quality</h2>
+               <p>
+                  We choose raw materials from the best
+                  manufacturers, so our furniture and decor
+                  are of the highest quality at the best price      
+               </p>
+            </div>
+            <div class="containers">
+               <img src="./Paragraph_images/eco.png" alt="">
+               <h2>Delivery to your door</h2>
+               <p>
+                  We will deliver to your door any where in the world.
+                  if you are not 100% satisfied,let us know within 30 days
+                  and we'll solve the problem.
+               </p>
+      </div>
+    </div>
+</div>
+   <!-- Fotter -->
+   <div class="fotter" id="fotter">
+         <ul>
+               <li>Bedroom</li>
+               <li>Living room</li>
+               <li>Bathroom</li>
+               <li>Decoration</li>
+               <li>Kitchen</li>
+               <li>Sale</li>
+         </ul>
+
+         <div class="mail_section">
+             <h1>Stay in touch with us</h1>
+             <p>Receive the latest update about our product & promotion </p>
+            <input type="text" placeholder="Your Email">
+         </div>
+            
+         <ul>
+            <li>Shipping options</li>
+            <li>Tracking a package</li>
+            <li>Help center</li>
+            <li>Contect us</li>
+            <li>Product return</li>
+            <li>Location</li>
+         </ul>
+   </div>
+  
+   <script>
+
+   </script>
+</body>
+</html>

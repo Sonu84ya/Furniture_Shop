@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      *,:before,:after{
+        box-sizing: border-box;
+      }
+      body {
+        overflow-x: hidden;
+      }
+      .section {
+        box-sizing: border-box;
+        background-color: white;
+        margin: 40px 30px;
+        padding: 30px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+      }
+      .content {
+        height: 100%;
+        width: 43%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+      }
+      .content button {
+        width: 10rem;
+        padding: 10px;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+      }
+
+      p {
+        font-size: larger;
+        font-weight: 500;
+        width: 40vw;
+      }
+
+      h3 {
+        font-family: "Public Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+
+      img {
+        height: 95%;
+        width: 45%;
+        padding: 10px;
+      }
+      .row {
+        padding: 15px 0px 15px 0px;
+      }
+      .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 2px; */
+      }
+
+      .section2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .input {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .input label {
+        padding-bottom: 10px;
+        font-size: x-large;
+      }
+
+      form {
+        height: 70vh;
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding: 1rem;
+        background-color: #3c3c3c;
+        color: white;
+        border-radius: 10px;
+      }
+
+      form input {
+        width: calc(23vw);
+        font-size: x-large;
+        padding: 0.5rem;
+        border: none;
+        color: white;
+        background-color: transparent;
+        border-bottom: 1px solid gray;
+      }
+
+      form textarea {
+        width: calc(23vw - 3px);
+        height: 10vh;
+        resize: none;
+        padding: 0.5rem;
+        font-size: x-large;
+        font-weight: 500;
+        border: none;
+        color: white;
+        background: transparent;
+        border-bottom: 1px solid gray;
+      }
+
+      form h1 {
+        text-align: center;
+      }
+      .submit_btn {
+        width: 20vw;
+        padding: 10px;
+        color: white;
+        border: none;
+        background-color: cadetblue;
+        border-radius: 40px;
+        cursor: pointer;
+      }
+      @media (max-width: 900px) {
+      
+        .content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+      }
+
+        .section{
+        background-color: white;
+        margin: 20px 10px;
+        padding: 10px 5px;
+        justify-content: center;
+        gap: 0rem;
+        }
+        .section img{
+          height: 30%;
+          width: 100%;
+        }
+        img {
+        padding: 10px;
+      }
+      p {
+        font-size: larger;
+        font-weight: 500;
+        width: 100%;
+      }
+        form{
+          height: 70vh;
+         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding: 1rem;
+        background-color: #3c3c3c;
+        color: white;
+        border-radius: 10px;
+        }
+     
+        form input {
+        width: 100%;
+      }
+      
+       form textarea{
+        width: 100%;
+        height: 100%;
+      }
+      .input {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .submit_btn {
+        width: 50%;
+      }
+      }
+   
+      hr{
+        transform: translateX(5vw);
+           width: 90vw;
+      }
+
+
+    </style>
+  </head>
+  <body>
+   <div class="section">
+      <div class="content">
+        <h3 class="row">SUSTAINABILITY</h3>
+        <h1 class="row">Crafting Comfort, One Piece at a Time</h1>
+        <p class="row">
+          Discover the perfect blend of style, comfort, and quality with our premium furniture collection—now just a tap away on our sleek, easy-to-use app. Whether you're refreshing a single room or furnishing your entire home, our curated selection offers timeless designs to match every taste and budget. Enjoy exclusive app-only deals, effortless browsing, and secure checkout—because your dream space deserves nothing less. Start transforming your home today!
+        </p>
+         <a href="#" class="row"> <button>LEARN MORE</button></a>
+      </div>
+         <img src="./Images/about.png" />
+   </div>
+
+   <hr>
+
+   <div class=" section section2 ">
+          <form name = "contectUS" netlify >
+                            <h1>Contect Me</h1>
+                      <div class="input">
+                           <label>Your name</label>
+                           <input type="text" name="text">
+                     </div>
+                     <div class="input">
+                           <label>Your Mail</label>
+                           <textarea name="textarea" id="T_area"></textarea>
+                     </div>
+                     <button type="submit" class="submit_btn">Submit</button>
+              </form>
+      </div>
+  </body>
+</html>
